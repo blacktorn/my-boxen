@@ -58,9 +58,6 @@ node default {
   include chrome
   include wget
 
-  include osx::finder::unhide_library
-  include osx::no_network_dsstores
-
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
