@@ -64,7 +64,7 @@ node default {
   }
 
   # default ruby versions
-  include ruby::1_9_3
+  include ruby::2_0_0
 
   # common, useful packages
   package {

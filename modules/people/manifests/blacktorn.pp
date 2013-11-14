@@ -52,7 +52,7 @@ class people::blacktorn {
   include heroku
   include zsh
   include ctags
-  include vim
+  include macvim
 
   git::config::global { 'user.name':
     value => 'Dennis Vermeulen'
