@@ -30,6 +30,7 @@ class people::blacktorn {
   include osx::finder::show_external_hard_drives_on_desktop
   include osx::finder::empty_trash_securely
   include osx::finder::unhide_library
+  include osx::dock::autohide
   include osx::dock::icon_size
   include osx::no_network_dsstores
 
@@ -58,7 +59,7 @@ class people::blacktorn {
     value => 'Dennis Vermeulen'
   }
   git::config::global { 'user.email':
-    value => 'blacktorn@gmail.com'
+    value => 'dennis@wecreatepixels.nl'
   }
 
   vim::bundle { [
