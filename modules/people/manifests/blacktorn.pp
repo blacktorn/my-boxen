@@ -86,4 +86,6 @@ class people::blacktorn {
   include alfred
   include sourcetree
   include spotify
+  include virtualbox
+  include vagrant
 }
