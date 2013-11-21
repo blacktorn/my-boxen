@@ -53,7 +53,7 @@ class people::blacktorn {
   include heroku
   include zsh
   include ctags
-  include macvim
+  include vim
 
   git::config::global { 'user.name':
     value => 'Dennis Vermeulen'
@@ -75,8 +75,17 @@ class people::blacktorn {
     'ervandew/supertab',
     'tpope/vim-fugitive',
     'rodjek/vim-puppet',
+    'csscomb/csscomb-for-vim',
+    'bling/vim-airline',
+    'kien/ctrlp.vim',
     'tomasr/molokai'
   ]: }
+
+  file { "${vim::vimrc}":
+    ensure  => 'link',
+    target  => "${dotfiles}/vimrc",
+    require => Repository[$dotfiles]
+  }
 
   # apps
   include iterm2::dev

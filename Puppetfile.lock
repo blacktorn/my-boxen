@@ -64,11 +64,6 @@ GITHUBTARBALL
     iterm2 (1.0.4)
 
 GITHUBTARBALL
-  remote: boxen/puppet-macvim
-  specs:
-    macvim (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
@@ -112,6 +107,11 @@ GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
     vagrant (3.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vim
+  specs:
+    vim (1.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
@@ -158,7 +158,6 @@ DEPENDENCIES
   homebrew (= 1.5.1)
   inifile (= 1.0.0)
   iterm2 (= 1.0.4)
-  macvim (= 1.0.0)
   openssl (= 1.0.0)
   osx (= 2.0.0)
   python (= 1.3.0)
@@ -169,6 +168,7 @@ DEPENDENCIES
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
   vagrant (= 3.0.0)
+  vim (= 1.0.5)
   virtualbox (= 1.0.9)
   wget (= 1.0.0)
   xquartz (= 1.1.1)
