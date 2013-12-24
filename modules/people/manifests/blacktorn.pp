@@ -100,6 +100,7 @@ class people::blacktorn {
   include chrome
   include flux
   include alfred
+  include skitch
   include sourcetree
   include spotify
   include virtualbox
