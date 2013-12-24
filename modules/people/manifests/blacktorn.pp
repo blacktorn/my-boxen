@@ -87,6 +87,13 @@ class people::blacktorn {
     require => Repository[$dotfiles]
   }
 
+  # personal packages
+  package {
+    [
+      'tmux'
+    ]:
+  }
+
   # apps
   include iterm2::dev
   include firefox
