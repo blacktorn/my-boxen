@@ -55,6 +55,7 @@ node default {
   # core modules, needed for most things
   include git
   include python
+  include postgresql
   include chrome
   include wget
 
