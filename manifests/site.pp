@@ -55,13 +55,16 @@ node default {
   # core modules, needed for most things
   include git
   include python
-  include postgresql
   include chrome
   include wget
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
+  }
+
+  class { 'postgresql':
+    port => 5432
   }
 
   # install ruby 2.0.0 globally
