@@ -68,8 +68,13 @@ node default {
   }
 
   # install ruby 2.0.0 globally
+  $version = '2.0.0'
   class { 'ruby::global':
-    version => '2.0.0'
+    version => $version
+  }
+  ruby::gem { "tmuxinator for ${version}":
+    gem  => 'tmuxinator',
+    ruby => $version
   }
 
   # common, useful packages

@@ -23,6 +23,12 @@ class people::blacktorn {
     require => Repository[$dotfiles]
   }
 
+  file { "${home}/.tmux.conf":
+    ensure  => 'link',
+    target  => "${dotfiles}/tmux.conf",
+    require => Repository[$dotfiles]
+  }
+
   # os x settings
   include osx::global::disable_key_press_and_hold
   include osx::global::enable_keyboard_control_access
