@@ -79,10 +79,10 @@ class people::blacktorn {
     'Townk/vim-autoclose',
     'SirVer/ultisnips',
     'ervandew/supertab',
+    'mattn/emmet-vim',
     'tpope/vim-fugitive',
     'rodjek/vim-puppet',
     'csscomb/csscomb-for-vim',
-    'bling/vim-airline',
     'kien/ctrlp.vim',
     'tomasr/molokai'
   ]: }
@@ -98,6 +98,11 @@ class people::blacktorn {
     [
       'tmux'
     ]:
+  }
+  package { 'Powerline':
+    provider => pip,
+    source   => 'git+git://github.com/Lokaltog/powerline',
+    require  => Class['python']
   }
 
   # apps
