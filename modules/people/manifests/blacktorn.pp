@@ -79,6 +79,7 @@ class people::blacktorn {
     'Townk/vim-autoclose',
     'SirVer/ultisnips',
     'ervandew/supertab',
+    'davidhalter/jedi-vim',
     'mattn/emmet-vim',
     'tpope/vim-fugitive',
     'rodjek/vim-puppet',
