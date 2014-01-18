@@ -105,6 +105,10 @@ class people::blacktorn {
     source   => 'git+git://github.com/Lokaltog/powerline',
     require  => Class['python']
   }
+  package { 'flake8':
+    provider => pip,
+    require  => Class['python']
+  }
 
   # apps
   include iterm2::dev
