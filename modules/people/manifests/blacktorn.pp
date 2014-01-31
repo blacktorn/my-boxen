@@ -85,7 +85,7 @@ class people::blacktorn {
     'rodjek/vim-puppet',
     'csscomb/csscomb-for-vim',
     'kien/ctrlp.vim',
-    'tomasr/molokai'
+    'sjl/badwolf'
   ]: }
 
   file { "${vim::vimrc}":
