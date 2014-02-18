@@ -117,4 +117,5 @@ class people::blacktorn {
   include spotify
   include virtualbox
   include vagrant
+  include pathfinder
 }

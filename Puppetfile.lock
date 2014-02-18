@@ -4,6 +4,11 @@ GITHUBTARBALL
     oh_my_zsh (1.0.0)
 
 GITHUBTARBALL
+  remote: blacktorn/puppet-pathfinder
+  specs:
+    pathfinder (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
     alfred (1.1.7)
@@ -197,6 +202,7 @@ DEPENDENCIES
   oh_my_zsh (= 1.0.0)
   openssl (= 1.0.0)
   osx (= 2.2.2)
+  pathfinder (= 1.0.0)
   phantomjs (= 2.1.0)
   pkgconfig (= 1.0.0)
   postgresql (= 3.0.1)
