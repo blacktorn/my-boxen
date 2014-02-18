@@ -118,6 +118,7 @@ class people::blacktorn {
   include virtualbox
   include vagrant
   include pathfinder
+  include pgadmin3
 
   class { 'intellij':
     edition => 'ultimate',
