@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: blacktorn/puppet-oh_my_zsh
+  specs:
+    oh_my_zsh (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
     alfred (1.1.7)
@@ -189,6 +194,7 @@ DEPENDENCIES
   homebrew (= 1.6.0)
   inifile (= 1.0.1)
   iterm2 (= 1.0.7)
+  oh_my_zsh (= 1.0.0)
   openssl (= 1.0.0)
   osx (= 2.2.2)
   phantomjs (= 2.1.0)

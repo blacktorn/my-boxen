@@ -12,11 +12,6 @@ class people::blacktorn {
     require => File[$my]
   }
 
-  repository { 'robbyrussell/oh-my-zsh':
-    source => 'robbyrussell/oh-my-zsh',
-    path   => "${home}/.oh-my-zsh"
-  }
-
   file { "${home}/.zshrc":
     ensure  => 'link',
     target  => "${dotfiles}/zshrc",
@@ -58,6 +53,7 @@ class people::blacktorn {
 
   include heroku
   include zsh
+  include oh_my_zsh
   include ctags
   include vim
 
