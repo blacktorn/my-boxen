@@ -118,4 +118,9 @@ class people::blacktorn {
   include virtualbox
   include vagrant
   include pathfinder
+
+  class { 'intellij':
+    edition => 'ultimate',
+    version => '12.1.6'
+  }
 }
