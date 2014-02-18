@@ -116,9 +116,13 @@ class people::blacktorn {
   include sourcetree
   include spotify
   include virtualbox
-  include vagrant
   include pathfinder
   include pgadmin3
+
+  vagrant::plugin { 'salt': }
+  vagrant::box { 'precise64/virtualbox':
+    source => 'http://files.vagrantup.com/precise64.box'
+  }
 
   class { 'intellij':
     edition => 'ultimate',
