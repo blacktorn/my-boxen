@@ -35,6 +35,10 @@ class people::blacktorn {
   include osx::dock::icon_size
   include osx::no_network_dsstores
 
+  class { 'osx::dock::position':
+    position => 'left'
+  }
+
   boxen::osx_defaults { 'Disable Dashboard':
     key    => 'mcx-disabled',
     domain => 'com.apple.dashboard',
