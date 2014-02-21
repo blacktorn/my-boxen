@@ -121,6 +121,7 @@ class people::blacktorn {
   include spotify
   include virtualbox
   include pathfinder
+  include kaleidoscope
   include pgadmin3
 
   vagrant::plugin { 'salt': }
