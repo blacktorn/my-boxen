@@ -121,6 +121,7 @@ class people::blacktorn {
   include spotify
   include virtualbox
   include pathfinder
+  include contexts
   include kaleidoscope
   include pgadmin3
 
