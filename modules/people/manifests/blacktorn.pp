@@ -132,6 +132,6 @@ class people::blacktorn {
 
   class { 'intellij':
     edition => 'ultimate',
-    version => '12.1.6'
+    version => '13.1.2'
   }
 }
