@@ -118,11 +118,11 @@ class people::blacktorn {
   include alfred
   include skitch
   include sourcetree
+  include dropbox
   include spotify
   include virtualbox
   include pathfinder
   include contexts
-  include kaleidoscope
   include pgadmin3
 
   vagrant::plugin { 'salt': }
@@ -134,4 +134,9 @@ class people::blacktorn {
     edition => 'ultimate',
     version => '13.1.2'
   }
+
+  class { 'kaleidoscope':
+    make_default => false,
+    version      => '2.1.0-134'
+   }
 }
