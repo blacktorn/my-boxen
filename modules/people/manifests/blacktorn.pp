@@ -29,7 +29,6 @@ class people::blacktorn {
   include osx::global::enable_keyboard_control_access
   include osx::global::expand_save_dialog
   include osx::finder::show_external_hard_drives_on_desktop
-  include osx::finder::empty_trash_securely
   include osx::finder::unhide_library
   include osx::dock::autohide
   include osx::dock::icon_size
@@ -110,6 +109,8 @@ class people::blacktorn {
     require  => Class['python']
   }
 
+  class { 'nodejs::global': version => 'v0.10.29' }
+
   # apps
   include iterm2::dev
   include firefox
@@ -120,10 +121,13 @@ class people::blacktorn {
   include sourcetree
   include dropbox
   include spotify
-  include virtualbox
-  include pathfinder
   include contexts
   include pgadmin3
+
+  class { 'virtualbox':
+    version     => '4.3.16',
+    patch_level => '95972'
+  }
 
   vagrant::plugin { 'salt': }
   vagrant::box { 'precise64/virtualbox':
@@ -132,7 +136,7 @@ class people::blacktorn {
 
   class { 'intellij':
     edition => 'ultimate',
-    version => '13.1.2'
+    version => '13.1.5'
   }
 
   class { 'kaleidoscope':
