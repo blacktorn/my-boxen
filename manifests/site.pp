@@ -68,15 +68,7 @@ node default {
     port => 5432
   }
 
-  # install ruby 2.0.0 globally
-  $version = '2.0.0'
-  class { 'ruby::global':
-    version => $version
-  }
-  ruby::gem { "tmuxinator for ${version}":
-    gem  => 'tmuxinator',
-    ruby => $version
-  }
+  ruby::version { '2.0.0': }
 
   # common, useful packages
   package {
