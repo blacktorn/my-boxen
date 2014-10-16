@@ -66,7 +66,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-go
   specs:
-    go (1.1.0)
+    go (2.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-heroku
@@ -226,7 +226,7 @@ DEPENDENCIES
   foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.5.0)
-  go (= 1.1.0)
+  go (= 2.1.0)
   heroku (= 2.1.1)
   homebrew (= 1.9.5)
   inifile (= 1.1.1)

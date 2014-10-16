@@ -70,6 +70,9 @@ node default {
 
   ruby::version { '2.0.0': }
 
+  include go
+  go::version { '1.3.3': }
+
   # common, useful packages
   package {
     [

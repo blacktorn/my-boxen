@@ -1,4 +1,6 @@
 class people::blacktorn {
+  include people::blacktorn::config::golang
+
   $home     = "/Users/${::boxen_user}"
   $my       = "${home}/my"
   $dotfiles = "${my}/dotfiles"
@@ -142,5 +144,5 @@ class people::blacktorn {
   class { 'kaleidoscope':
     make_default => false,
     version      => '2.1.0-134'
-   }
+  }
 }
