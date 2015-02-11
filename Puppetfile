@@ -59,7 +59,7 @@ github "sysctl",       "1.0.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 github "osx",          "2.2.2"
-github "python",       "1.3.0"
+github "python",       "2.0.0"
 github "nodejs",       "3.8.1"
 github "postgresql",   "3.0.1"
 github "wget",         "1.0.1"

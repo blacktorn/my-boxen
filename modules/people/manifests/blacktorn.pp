@@ -60,7 +60,7 @@ class people::blacktorn {
   include zsh
   include oh_my_zsh
   include ctags
-  include vim
+  #include vim
 
   git::config::global { 'user.name':
     value => 'Dennis Vermeulen'
@@ -69,46 +69,11 @@ class people::blacktorn {
     value => 'dennis@wecreatepixels.nl'
   }
 
-  vim::bundle { [
-    'rizzatti/funcoo.vim',
-    'rizzatti/dash.vim',
-    'scrooloose/syntastic',
-    'scrooloose/nerdtree',
-    'majutsushi/tagbar',
-    'godlygeek/tabular',
-    'airblade/vim-gitgutter',
-    'Townk/vim-autoclose',
-    'SirVer/ultisnips',
-    'ervandew/supertab',
-    'davidhalter/jedi-vim',
-    'mattn/emmet-vim',
-    'tpope/vim-fugitive',
-    'rodjek/vim-puppet',
-    'csscomb/csscomb-for-vim',
-    'kien/ctrlp.vim',
-    'sjl/badwolf'
-  ]: }
-
-  file { "${vim::vimrc}":
-    ensure  => 'link',
-    target  => "${dotfiles}/vimrc",
-    require => Repository[$dotfiles]
-  }
-
   # personal packages
   package {
     [
       'tmux'
     ]:
-  }
-  package { 'Powerline':
-    provider => pip,
-    source   => 'git+git://github.com/Lokaltog/powerline',
-    require  => Class['python']
-  }
-  package { 'flake8':
-    provider => pip,
-    require  => Class['python']
   }
 
   class { 'nodejs::global': version => 'v0.10.29' }
@@ -127,8 +92,8 @@ class people::blacktorn {
   include pgadmin3
 
   class { 'virtualbox':
-    version     => '4.3.16',
-    patch_level => '95972'
+    version     => '4.3.20',
+    patch_level => '96996'
   }
 
   vagrant::plugin { 'salt': }
